@@ -18,6 +18,8 @@ function App() {
 
       <BrowserRouter>
 
+      <h1 className="my-5">StarWars API</h1>
+
         <Search></Search>
 
         <Switch>
