@@ -5,15 +5,16 @@ const Films = (props) => {
     return (
 
         <div>
-            <h3>{props.title}</h3>
 
-            <h3>Episode: {props.episodeId}</h3>
+            <h1 className="my-5"> <u> {props.title} </u> </h1>
 
-            <h3>Director: {props.director}</h3>
+            <p> Episode: {props.episodeId} </p>
 
-            <h3>Producer: {props.producer}</h3>
+            <p >Director: {props.director} </p>
 
-            <h3>release_date: {props.releaseDate}</h3>
+            <p> Producer: {props.producer} </p>
+
+            <p> release_date: {props.releaseDate} </p>
 
 
         </div>

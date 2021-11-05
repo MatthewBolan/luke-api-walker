@@ -39,7 +39,7 @@ const Search = () => {
 
             .catch( error => console.log (error) )
 
-    }, [] )
+    } , [] )
 
 
 
@@ -61,7 +61,7 @@ const Search = () => {
 
         event.preventDefault();
 
-        history.push( `/ ${formInfo.category} / ${formInfo.id} ` )
+        history.push(`/${formInfo.category}/${formInfo.id}`)
 
     }
 
@@ -82,7 +82,7 @@ const Search = () => {
 
         <div className = "d-flex justify-content-center">
 
-            <form onSubmit = {submitHandler} className = "form-inline row g-3 align-items-center" action = "">
+            <form onSubmit = {submitHandler} className = "row" action = "">
 
             <div className = "col-auto">
 

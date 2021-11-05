@@ -5,15 +5,15 @@ const Stars = (props) => {
     return (
 
         <div>
-            <h3>{props.name}</h3>
+            <h1 className="my-5"> <u> {props.name} </u> </h1>
 
-            <h3>Climate: {props.climate}</h3>
+            <p> Climate: {props.climate} </p>
 
-            <h3>Terrain: {props.terrain}</h3>
+            <p> Terrain: {props.terrain} </p>
 
-            <h3>Surface Water: {props.surfaceWater}</h3>
+            <p> Surface Water: {props.surfaceWater} </p>
 
-            <h3>Population: {props.population}</h3>
+            <p> Population: {props.population} </p>
 
 
         </div>

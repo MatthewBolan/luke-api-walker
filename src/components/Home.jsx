@@ -27,17 +27,17 @@ const Home = () => {
 
     useEffect ( () => {
 
-        axios.get( `https://swapi.dev/api/${category}/${id}/` )
+        axios.get(`https://swapi.dev/api/${category}/${id}/`)
 
             .then ( response => {
 
                 setInfo (response.data)
 
-            } )
+            })
 
             .catch( error => console.log (error) )
 
-    } , [category,id] )
+    }, [category,id] )
 
 
 
@@ -46,20 +46,20 @@ const Home = () => {
         <div>
 
             {
-                
+
                 category === "people"?
 
                 <>
 
-                    <h3> {info.name} </h3>
+                    <h1 className="my-5"> <u> {info.name} </u> </h1>
 
                     <p> Height: {info.height} </p>
 
                     <p> Mass: {info.mass} </p>
 
-                    <p> Hair Color: {info.hair_color} </p>
+                    <p>Hair Color: {info.hair_color}</p>
 
-                    <p> Skin Color: {info.skin_color} </p>
+                    <p>Skin Color: {info.skin_color}</p>
 
                 </>:
 

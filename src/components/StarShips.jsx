@@ -5,15 +5,15 @@ const StarShips = (props) => {
     return (
 
         <div>
-            <h3>{props.name}</h3>
+            <h1 className="my-5"> <u> {props.name} </u> </h1>
 
-            <h3>Model: {props.model}</h3>
+            <p> Model: {props.model} </p>
 
-            <h3>Manufacturer: {props.manufacturer}</h3>
+            <p> Manufacturer: {props.manufacturer} </p>
 
-            <h3>Cost In Credits: {props.costInCredits}</h3>
+            <p> Cost In Credits: {props.costInCredits} </p>
 
-            <h3>Cargo Capacity: {props.cargoCapacity}</h3>
+            <p>Cargo Capacity: {props.cargoCapacity}</p>
 
 
         </div>

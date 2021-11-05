@@ -1,23 +1,26 @@
+
 import React from 'react';
 
 const Species = (props) => {
-    
+
     return (
 
         <div>
-            <h3>{props.name}</h3>
 
-            <h3>Classification: {props.classification}</h3>
+            <h1 className="my-5"> <u> {props.name} </u> </h1>
 
-            <h3>Average Height: {props.averageHeight}</h3>
+            <p> Classification: {props.classification} </p>
 
-            <h3>Average Lifespan: {props.averageLifespan}</h3>
+            <p> Average Height: {props.averageHeight} </p>
 
-            <h3>Language: {props.language}</h3>
+            <p> Average Lifespan: {props.averageLifespan} </p>
 
+            <p> Language: {props.language} </p>
 
         </div>
+
     );
+
 };
 
 
